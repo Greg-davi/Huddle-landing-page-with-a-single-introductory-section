@@ -1,0 +1,149 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body{
+    background-color: var(--Violet);  
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    margin-top: 50px;
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+
+.head img{
+    height: 50px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.write-up{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.write-up h3{
+    font-size: 39px;
+    line-height: 60px;
+}
+
+.write-up p{
+    font-size: 1.16em;
+    line-height: 25px;
+}
+
+button{
+    height: 50px;
+    width: 40%;
+    border-radius: 50px;
+    border: none;
+    color: var(--Violet);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.social{
+    right: 0px;
+    display: flex;
+    justify-content: end;
+}
+
+.social div{
+    display: flex;
+}
+
+.social i{
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.fa{
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    color: white;
+}
+
+
+@media screen and (max-width: 700px ) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-size: contain;
+        background-position: top;
+    }
+    .wrapper{
+        background-image: url(./);
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    main img{
+        margin-top: 10px;
+    }
+    .write-up{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .write-up h3{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    .write-up p{
+        font-size: 1.16em;
+        line-height: 25px;
+    }
+    
+    button{
+        height: 50px;
+        width: 60%;
+        border-radius: 50px;
+        border: none;
+        color: var(--Violet);
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    .social{
+        margin-top: 50px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .social i{      
+        border: 1px solid white;       
+    }
+    
+    
+}
+
